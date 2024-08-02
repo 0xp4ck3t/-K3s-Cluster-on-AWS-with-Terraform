@@ -22,7 +22,7 @@ module "database" {
   dbname                 = var.dbname
   dbuser                 = var.dbuser
   dbpassword             = var.dbpass
-  db_identifier          = "K3-db"
+  db_identifier          = "k3-db"
   skip_db_snapshot       = true
   db_subnet_group_name   = module.networking.db_subnet_group_name[0]
   vpc_security_group_ids = module.networking.db_security_group
